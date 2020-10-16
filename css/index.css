@@ -1,0 +1,229 @@
+﻿/* Reglas CSS para elementos HTML */
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
+:root {
+  --cwhite: #f7f9fb;
+  --cpurple: #5d4d97;
+  --ccream: #eeba9f;
+  --clightp: #c383ac;
+  --cblack: #000000;
+  --cblackMact: #1C1C1C;
+  --ctransp: rgba(0, 0, 0,.3);
+  --ctransp2: rgba(0, 0, 0,.0);
+  --ctransp3: rgba(0, 0, 0, 0.479);
+  --cazul1: #1a2537;
+  --cazul2: cadetblue;
+
+  --font: 'Raleway';
+
+  --fsize1: 20px;
+  --fsize2: 18px;
+  --fsize3: 16px;
+
+  --fsize4: 80px;
+  --fsize5: 45px;
+}
+
+*{
+  box-sizing: content-box;
+}
+
+.contenedorglobal{
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  overflow: hidden;
+
+
+}
+
+.main{
+  width: 70%;
+  padding: 20px;
+  float: left;
+  box-sizing: border-box;
+}
+
+body{
+  /* Fondo */
+  background-image: url("../img/fondo12.jpg");
+  /* fuentes, varias fuentes por descarte */
+  font-family: 'Raleway', sans-serif;
+  /* px pixels*/
+  font-size: var(--fsize3);
+  /* cuadrar fondo */
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+h1{
+  /* color de la fuente de primer plano */
+  color: var(--cwhite);
+  /* tamaño de la fuente en pixeles */
+  font-size: var(--fsize1);
+  /* grosor de la fuente */
+  font-weight: bold;
+  /* margen externa */
+  margin: 0px;
+}
+
+h2{
+/* color de primer plano */
+color: var(--cwhite);
+/* tamaño de la fuente */
+font-size: var(--fsize2);
+/* grosor de la fuente */
+margin: 0px;
+}
+
+h3{
+/* color de primer plano */
+color: var(--cwhite);
+/* tamaño de la fuente */
+font-size: var(--fsize3);
+/* grosor de la fuente */
+margin: 0px;
+}
+
+p{
+/* margen arriba */
+margin-top: 15px;
+/* margen abajo */
+margin-bottom: 15px;
+color: var(--cwhite);
+}
+
+.header{
+/* ancho en porcentaje es una medida relativa  */
+width: 100%;
+background-color: var(--ctransp3);
+/* posicion del menu o los elementos flexible y en linea */
+display: inline-flex;
+/* afectar la distribucion entre los elementos */
+justify-content: space-between;
+/* centra todos los items de header tanto imagenes como texto u opciones */
+align-items: center;
+border-radius: 20px
+}
+
+.header2{
+  /* ancho en porcentaje es una medida relativa  */
+  width: 100%;
+  background-color: var(--ctransp3);
+  /* posicion del menu o los elementos flexible y en linea */
+  display: inline-flex;
+  /* afectar la distribucion entre los elementos */
+  justify-content: space-between;
+  /* centra todos los items de header tanto imagenes como texto u opciones */
+  align-items: center;
+  }
+
+.header-brand {
+margin: 0px;
+}
+
+.header-menu {
+margin-right: 20px;
+}
+
+nav ol {
+display: inline-flex;
+align-items: center;
+}
+nav ol li{
+/*Espaciado entre las palabras*/
+padding-left: 20px;
+/*Muestra de manera horizontal*/
+list-style: none;
+}
+
+nav ol li a{
+font-size: var(--fsize2);
+font-weight: bold;
+color: var(--cazul1);
+/*Quita el subrayado*/
+text-decoration: none;
+}
+
+nav ol li a:hover{
+font-size: var(--fsize2);
+font-weight: bold;
+color: var(--cazul2);
+}
+
+.presentation{
+margin: 14.5%;
+text-align: center;
+}
+
+.title-grand{
+  font-size: var(--fsize4);
+}
+.footer{
+/* ancho % medida relativa */
+width: 100%;
+/* color de fondo */
+background-color: var(--cblackMact);
+/* posición flexible y en línea de los elementos */
+display: inline-flex;
+justify-content: space-between;
+align-items: center;
+clear: both;
+float: left;
+box-sizing: border-box;
+}
+
+nav ol{
+display: inline-flex;
+;
+}
+
+nav ol li{
+list-style: none;
+text-align: center;
+}
+
+nav ol li a{
+color: #f7f9fb;
+text-decoration: none;
+}
+
+nav ol li a:hover{
+color: var(--cazul2);
+}
+
+@media screen and (max-width: 400px){
+  .contenedorglobal{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 615px){
+  .footer-menu{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 615px){
+  .footer-menu{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 555px){
+  .header-menu{
+    font-size: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 477px){
+  .header-menu{
+    font-size: 5px;
+    margin-right: 5px;
+  }
+}
+
+@media screen and (max-width: 379px){
+  .header-menu{
+    display: none;
+  }
+}

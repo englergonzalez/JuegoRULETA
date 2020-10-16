@@ -1,0 +1,549 @@
+* {
+	margin: 0;
+    padding: 0;
+	text-align: center;
+}
+
+body {
+    background: url(../img/fondo12.jpg);
+
+}
+.vara {
+	height: 3px;
+	width: 90px;
+	background-color: #aaa;
+	opacity:0.6;
+	margin: auto;
+	position: absolute;
+	top: 355px;
+	border-radius: 0px 18px 18px 0px;
+	border: 1px solid #000;
+	border-top: 2px solid rgb(11, 253, 71);
+	z-index: 10;
+}
+.bola {
+	background-color: #fff;
+	opacity:0.9;
+	height:120px;
+	width: 120px;
+	margin: auto;
+	position: absolute;
+	top: 248px;
+	left:208px;
+	border-radius: 90px 90px 90px 90px;
+	border: 1px solid #000;
+	border-top: 2px solid #000;
+	z-index: 10;
+}
+#bola {
+	background-position: center;
+	font-size: 100px;
+	padding:  30px;
+}
+
+img {
+	position:absolute; top:50px; left: 10px; visibility:visible;
+	z-index: 0;
+	transition: all 1s
+}
+
+.botonimagen1{
+	position: absolute;
+	top: 780px;
+	left: 700px;
+	margin: auto;
+	background-image: url(../img/apuesta1E.png);
+	background-repeat:no-repeat;
+	height:130px;
+	width:130px;
+  	background-position:center;
+    text-decoration: none	;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #006505;
+    background-color: #82b085;
+	border-radius: 90px 90px 90px 90px;
+    border: 3px double #006505;
+  }
+  .botonimagen1:hover{
+    opacity: 0.9;
+    text-decoration: none;
+  }
+  
+
+.botonimagen5{
+	position: absolute;
+	top: 780px;
+	left: 900px;
+	margin: auto;
+	background-image: url(../img/apuesta5E.png);
+	background-repeat:no-repeat;
+	height:130px;
+	width:130px;
+  	background-position:center;
+    text-decoration: none;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #006505;
+    background-color: #82b085;
+	border-radius: 90px 90px 90px 90px;
+    border: 3px double #006505;
+}
+.botonimagen5:hover{
+  opacity: 0.9;
+  text-decoration: none;
+}
+
+.botonimagen10{
+	position: absolute;
+	top: 780px;
+	left: 1100px;
+	margin: auto;
+	background-image: url(../img/apuesta10E.png);
+	background-repeat:no-repeat;
+	height:130px;
+	width:130px;
+	background-position:center;
+	text-decoration: none;
+	padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #006505;
+    background-color: #82b085;
+	border-radius: 90px 90px 90px 90px;
+    border: 3px double #006505;
+  }
+  .botonimagen10:hover{
+    opacity: 0.9;
+    text-decoration: none;
+}
+
+#dinero {
+	position: relative;
+	margin: auto;
+	left: 00px;
+	top: 670px;
+	font-size: 30px;
+	background-color: #ffff;
+	opacity:0.8;
+	padding: 10px;
+}
+.tablero
+{
+	position: absolute;
+	margin: auto;
+	display:block;
+	top: 149px;
+	left: 698px;
+	padding:0px;
+	opacity: 0.99;
+	z-index: 10;
+}
+.tablero td button
+{
+	
+	position: block;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-color: transparent;
+	border: 3px double #fff;
+	display:block;
+	
+	padding: 0px;
+  	width:53px;
+	height:81px;
+	z-index: 10;
+}
+.tablero2
+{
+	position: absolute;
+	margin: auto;
+	display:block;
+	left: 698px;
+	top: 399px;
+	padding:0px;
+	opacity:0.99;
+	z-index: 10;
+}
+.tablero2 td button
+{
+	position:block;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-color: transparent;
+	border: 3px double #fff;
+	display:block;
+	padding:0px;
+  	width:218px;
+  	height:67px; 
+	z-index: 10;
+}
+.tablero3
+{
+	position: absolute;
+	display:block;
+	margin: auto;
+	top: 466px;
+	left: 698px;
+	padding:0px;
+	opacity: 0.99;
+	z-index: 10;
+}
+.tablero3 td button
+{
+	position:block;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-color: transparent;
+	border: 3px double #fff;
+	display:block;
+	padding:0px;
+  	width:108px;
+  	height:67px;
+	z-index: 10;
+}
+#pregunta
+{
+	position: relative;
+	left: 00px;
+	top: 670px;
+	margin: auto;
+	padding:0px;
+	color: #000;
+	background-color: white;
+ 	font-size: 20px;
+}
+#titulo
+{
+	position: absolute;
+	margin: auto;
+	left: 500px;
+	top: 20px;
+  	font-size: 40px;
+}
+
+#box{
+	background:url('../img/box_bg.jpg') repeat-x center top #fcfcfc;
+	height:	125px;
+	padding: 30px;
+	margin-top:-8px;
+	padding-top: 20px;
+	width:500px;
+	border:1px solid #fcfcfc;
+	border-radius:40px;
+	color:#494848;
+	text-shadow:1px 1px 0 white;
+	font-family:'Myriad Pro',Arial,Helvetica,sans-serif;
+	z-index: 10000000000000000;
+}
+
+#box p b{
+
+	font-size:52px;
+	display:block;
+}
+
+.button{
+	
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius: 30px;
+	z-index: 1000;
+}
+/* boton jugar */
+.button{
+	top: 600px;
+	left: 815px;
+	margin: auto;
+	position:absolute;
+	color:white;
+	letter-spacing:-2px;
+	padding:20px;
+	text-shadow:1px 1px 0 #0c5e13;
+	font-family:'Myriad Pro',Arial,Helvetica,sans-serif;
+	font-size:40px;
+	font-weight:bold;
+	text-align:center;
+	width:250px;
+	border:3px solid #38c299;
+	background-color: #5ee28a;
+	background-image: -moz-linear-gradient(#5ee28a, #4fca82);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#5ee28a), to #4fca82);
+}
+
+.button:hover{
+	z-index: 1000;
+	text-decoration:none;
+	background-color: #5ee28a;
+	background-image: -moz-linear-gradient(#6fd3b5, #82d694);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#69af89), to(#8ac588));
+}
+/* para vinculos 
+a, a:visited {
+	color:transparent;
+	text-decoration:none;
+	outline:none;
+}
+a:hover{
+	text-decoration:underline;
+}*/
+canvas{
+	top: 0px ;
+	display: block;
+	position: absolute;
+	z-index: 0;
+}
+h1{ /* titulo principal*/
+	top: 10px;
+	left: 0px;
+	margin: auto;
+	position: absolute;
+	text-align:center;
+	text-shadow:0 3px 3px black;
+	margin: 0px  300px;
+	font-family:"Myriad Pro",Arial,Helvetica,sans-serif;
+	z-index: 0;
+}
+.ventana{ /* Ventana emergente de si ganaste o perdiste*/
+	display: none;
+	background: #fff;
+	width: 600px;
+	color:black;
+	text-shadow:0 2px 2px rgb(44, 151, 115);;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	text-align: center;
+	padding: 33px;
+	min-height: 250px;
+	border-radius: 30px;
+	position: absolute;
+	left: 33%;
+	top: 0%;
+	z-index: 10000000000000000000000000000000000000000000;
+}
+#cerrar /* logo de cerrar ventana emergente*/
+{
+	display: block;
+	position: absolute;
+	left: 600px;
+	top: -35px;
+	z-index: 1000000;
+}
+.boton100euro{ /* botones de las fichas a comprar */
+	position: absolute;
+	top: 100px;
+	left: 55px;
+	margin: auto;
+	background-image: url(../img/100.png);
+	background-repeat:no-repeat;
+	height:100px;
+	width:100px;
+	background-position:center;
+	text-decoration: none;
+	padding: 3px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 90px 90px 90px 90px;
+	border: 3px double white;
+	z-index: 1000000;
+	}
+	.boton100euro:hover{
+	opacity: 0.8;
+	text-decoration: none;
+}
+
+.boton200euro{
+	position: absolute;
+	top: 230px;
+	left: 55px;
+	margin: auto;
+	background-image: url(../img/200.png);
+	background-repeat:no-repeat;
+	height:100px;
+	width:100px;
+	background-position:center;
+	text-decoration: none;
+	padding: 3px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 90px 90px 90px 90px;
+	border: 3px double white;
+	z-index: 1000000;
+}
+.boton200euro:hover{
+	opacity: 0.8;
+	text-decoration: none;
+}
+
+.boton500euro{
+	position: absolute;
+	top: 360px;
+	left: 55px;
+	margin: auto;
+	background-image: url(../img/500.png);
+	background-repeat:no-repeat;
+	height:100px;
+	width:100px;
+	background-position:center;
+	text-decoration: none;
+	padding: 3px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 90px 90px 90px 90px;
+	border: 3px doube white;
+	z-index: 1000000;
+	}
+	.boton500euro:hover{
+	opacity: 0.8;
+	text-decoration: none;
+}
+.ventanaCompra{
+	/*div donde se encuentra la C*/
+	background: #fff;
+	align-content: center;
+	width: 150px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	text-align: center;
+	text-shadow:0 2px 2px rgb(44, 151, 115);
+	padding: 33px;
+	min-height: 450px;
+	border-radius: 30px;
+	position: absolute;
+	left: 1550px;
+	top: 80px;
+	border:3px dotted #38c299;
+	z-index: 10000;
+}
+
+.main{
+	width: 70%;
+	padding: 20px;
+	float: left;
+	box-sizing: border-box;
+  }
+  
+  
+  h1{
+	/* color de la fuente de primer plano */
+	color: var(--cwhite);
+	/* tamaño de la fuente en pixeles */
+	font-size: var(--fsize1);
+	/* grosor de la fuente */
+	font-weight: bold;
+	/* margen externa */
+	margin: 0px;
+  }
+  
+  h2{
+  /* color de primer plano */
+  color: var(--cwhite);
+  /* tamaño de la fuente */
+  font-size: var(--fsize2);
+  /* grosor de la fuente */
+  margin: 0px;
+  }
+  
+  h3{
+  /* color de primer plano */
+  color: var(--cwhite);
+  /* tamaño de la fuente */
+  font-size: var(--fsize3);
+  /* grosor de la fuente */
+  margin: 0px;
+  }
+  
+  p{
+  /* margen arriba */
+  margin-top: 10px;
+  /* margen abajo */
+  margin-bottom: 10px;
+  color: var(--cwhite);
+  }
+  
+  .header{
+  /* ancho en porcentaje es una medida relativa  */
+  width: 100%;
+  background-color: var(--ctransp3);
+  /* posicion del menu o los elementos flexible y en linea */
+  display: inline-flex;
+  /* afectar la distribucion entre los elementos */
+  justify-content: space-between;
+  /* centra todos los items de header tanto imagenes como texto u opciones */
+  align-items: center;
+  }
+  
+  .header-brand {
+  margin: 0px;
+  }
+  
+  .header-menu {
+  margin-right: 20px;
+  }
+  
+  nav ol {
+  display: inline-flex;
+  align-items: center;
+  }
+  nav ol li{
+  /*Espaciado entre las palabras*/
+  padding-left: 20px;
+  /*Muestra de manera horizontal*/
+  list-style: none;
+  }
+  
+  nav ol li a{
+  font-size: var(--fsize2);
+  font-weight: bold;
+  color: var(--cazul1);
+  /*Quita el subrayado*/
+  text-decoration: none;
+  }
+  
+  nav ol li a:hover{
+  font-size: var(--fsize2);
+  font-weight: bold;
+  color: gray;
+  }
+  
+  .presentation{
+  margin: 14.5%;
+  text-align: center;
+  }
+  
+  .title-grand{
+	font-size: var(--fsize4);
+  }
+  .footer{
+  /* ancho % medida relativa */
+  width: 100%;
+  /* color de fondo */
+  background-color: var(--ctransp3);
+  /* posición flexible y en línea de los elementos */
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  clear: both;
+  float: left;
+  box-sizing: border-box;
+  }
+  
+  nav ol{
+  display: inline-flex;
+  }
+  
+  nav ol li{
+  padding-left: 90px;
+  list-style: none;
+  }
+  
+  nav ol li a{
+  color: #f7f9fb;
+  text-decoration: none;
+  }
+  
+  nav ol li a:hover{
+  color: gray;
+  }

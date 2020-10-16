@@ -1,0 +1,94 @@
+
+.content {
+    display: flex;
+    margin: 100px;
+    justify-content: center;
+}
+
+.form-login{
+    background-color: var(--ccream);
+    width: 30rem;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 3rem 3rem 1rem 2.5rem 1rem 2.5rem 3rem 4rem;
+    grid-gap: 5px;
+}
+
+.form-adduser {
+    background-color: var(--ccream);
+    width: 20rem;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 3rem 3rem 1rem 2.5rem 1rem 2.5rem 1rem 2.5rem 1rem 2.5rem 3rem;
+    grid-gap: 5px;
+}
+
+.form-addproduct {
+    background-color: var(--ccream);
+    width: 50rem;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 3rem 3rem 1rem 2.5rem 1rem 5rem 1rem 2.5rem 20rem 3rem;
+    grid-gap: 10px;
+}
+
+.form-title{
+    text-align: center;
+}
+
+.form-error {
+    font-family: 'Raleway', sans-serif;
+    color: red;
+    font-size: var(--fsize3);
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+}
+
+.form-button{ 
+    width: 100%;
+    height: 3rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: var(--fsize2);
+    font-weight: bold;
+    color: var(--cwhite);
+
+    border: none;
+    border-radius: 20px;
+    background-color: var(--cpurple);
+    
+    cursor: pointer;
+}
+
+.form-label{
+    align-self: center;
+}
+
+.form-text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    background-color: var(--cwhite);
+    border: 1px solid var(--cblack); 
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.form-figure {
+    background-color: var(--cwhite);
+    border: 1px solid var(--cblack); 
+
+    justify-self: center;
+    width: 18rem;
+    height: 18rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-img {
+    width: 95%
+}
